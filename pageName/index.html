@@ -223,6 +223,13 @@
           
   <div class="comments" id="comments">
     
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
   </div>
 
 
@@ -248,7 +255,7 @@
       <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="http://albumdata.b0.upaiyun.com/jingjia.jpg"
+               src="/images/avatar.gif"
                alt="JingJiaGuo" />
           <p class="site-author-name" itemprop="name">JingJiaGuo</p>
           <p class="site-description motion-element" itemprop="description">Pay it forword -  IT's boy</p>
@@ -396,6 +403,32 @@
 
 
 
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'jingjiaguo';
+      var disqus_identifier = 'pageName/index.html';
+      var disqus_title = "pageName";
+      var disqus_url = 'http://yoursite.com/pageName/index.html';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
+      
+    </script>
   
 
 
