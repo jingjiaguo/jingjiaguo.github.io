@@ -347,13 +347,12 @@
 
       
         
-          
-            <p>how to create an image whick is filled with pieces of irregular-shaped images, it&#x2019;s a good practice for me to handle it.</p>
-<h3 id="result"><a href="#result" class="headerlink" title="result"></a>result</h3><p><img src="/2016/10/28/imagick1/1.png" alt="logo"></p>
-<h3 id="principle"><a href="#principle" class="headerlink" title="principle"></a>principle</h3><p><img src="/2016/10/28/imagick1/2.png" alt="logo"></p>
-<h3 id="bash"><a href="#bash" class="headerlink" title="bash"></a>bash</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/bash</span></div><div class="line"></div><div class="line">input=<span class="variable">$1</span>  <span class="comment"># source image</span></div><div class="line">mask=<span class="variable">$2</span>   <span class="comment"># mask image</span></div><div class="line">output=<span class="variable">$3</span> <span class="comment"># target image</span></div><div class="line"></div><div class="line">convert <span class="variable">${input}</span> <span class="variable">${mask}</span> -gravity Center -alpha Off -compose CopyOpacity -composite <span class="variable">${output}</span></div></pre></td></tr></table></figure>
-<h3 id="summary"><a href="#summary" class="headerlink" title="summary"></a>summary</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">you can use a programming language (php,java...) whick use the imagck api to implement it.</div></pre></td></tr></table></figure>
-          
+          <p>how to create an image whick is filled with pieces of irregular-shaped images, it&#x2019;s a good practice for me to handle it.</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/10/28/imagick1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
