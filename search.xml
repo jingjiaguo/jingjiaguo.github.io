@@ -4,6 +4,13 @@
   
     
     <entry>
+      <title><![CDATA[git]]></title>
+      <url>http://yoursite.com/2016/10/31/git/</url>
+      <content type="text"><![CDATA[git rm &#x2013; remove the file or directory on the git repo1234567891011# -f, --force# Override the up-to-date check.# -n, --dry-run# Don&apos;t actually remove any file(s). Instead, just show if they exist in the index and would otherwise be# removed by the command.# -r# Allow recursive removal when a leading directory name is given.$ git rm -r -n --cache protected/components/Util.php]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[imagick - create an irregular-shaped crop]]></title>
       <url>http://yoursite.com/2016/10/28/imagick1/</url>
       <content type="text"><![CDATA[how to create an image whick is filled with pieces of irregular-shaped images, it&#x2019;s a good practice for me to handle it. result principle bash1234567#!/bin/bashinput=$1 # source imagemask=$2 # mask imageoutput=$3 # target imageconvert ${input} ${mask} -gravity Center -alpha Off -compose CopyOpacity -composite ${output} summary1you can use a programming language (php,java...) whick use the imagck api to implement it.]]></content>
