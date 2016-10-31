@@ -6,7 +6,7 @@
     <entry>
       <title><![CDATA[git]]></title>
       <url>http://yoursite.com/2016/10/31/git/</url>
-      <content type="text"><![CDATA[git rm &#x2013; remove the file or directory on the git repo1234567891011# -f, --force# Override the up-to-date check.# -n, --dry-run# Don&apos;t actually remove any file(s). Instead, just show if they exist in the index and would otherwise be# removed by the command.# -r# Allow recursive removal when a leading directory name is given.$ git rm -r -n --cache protected/components/Util.php]]></content>
+      <content type="text"><![CDATA[git rm &#x2013; remove the file or directory on the git repo12345678910111213# -f, --force# Override the up-to-date check.# -n, --dry-run# Don&apos;t actually remove any file(s). Instead, just show if they exist in the index and would otherwise be# removed by the command.# -r# Allow recursive removal when a leading directory name is given.$ git rm -r -n --cache protected/components/Util.php$ git rm -r -n --cache protected/*$ git rm -r -n --cache protected]]></content>
     </entry>
 
     
