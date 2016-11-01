@@ -278,6 +278,112 @@
             
               
                 
+                <a class="post-title-link" href="/2016/11/01/tcpdf/" itemprop="url">
+                  tcpdf - Display image in TCPDF using BLOB value
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-01T18:02:59+08:00" content="2016-11-01">
+              2016-11-01
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/01/tcpdf/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/01/tcpdf/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="The-API-documentation-for-Image-explains-it-in-more-detail"><a href="#The-API-documentation-for-Image-explains-it-in-more-detail" class="headerlink" title="The  API documentation for Image() explains it in more detail:"></a>The <a href="https://tcpdf.org/docs/source_docs/classTCPDF/#a714c2bee7d6b39d4d6d304540c761352" target="_blank" rel="external"> API documentation for Image() </a>explains it in more detail:</h2><blockquote>
+<ul>
+<li>$file (string) Name of the file containing the image or a &#x2018;@&#x2019; character followed by the image data string. To link an image without embedding it on the document, set an asterisk character before the URL (i.e.:  <a href="http://www.example.com/image.jpg" target="_blank" rel="external">http://www.example.com/image.jpg</a>).</li>
+</ul>
+</blockquote>
+<h2 id="From-example-9-Image"><a href="#From-example-9-Image" class="headerlink" title="From  example #9  - Image():"></a>From <a href="https://tcpdf.org/examples/example_009/" target="_blank" rel="external"> example #9 </a> - Image():</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">// Example of Image from data stream (<span class="string">&apos;PHP rules&apos;</span>)</div><div class="line"><span class="variable">$imgdata</span> = base64_decode(<span class="string">&apos;iVBORw0KGgoAAAANSUhEUgAAABwAAAASCAMAAAB/2U7WAAAABlBMVEUAAAD///+l2Z/dAAAASUlEQVR4XqWQUQoAIAxC2/0vXZDrEX4IJTRkb7lobNUStXsB0jIXIAMSsQnWlsV+wULF4Avk9fLq2r8a5HSE35Q3eO2XP1A1wQkZSgETvDtKdQAAAABJRU5ErkJggg==&apos;</span>);</div><div class="line"></div><div class="line">// The <span class="string">&apos;@&apos;</span> character is used to indicate that follows an image data stream and not an image file name</div><div class="line"><span class="variable">$pdf</span>-&gt;Image(<span class="string">&apos;@&apos;</span>.<span class="variable">$imgdata</span>);</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/10/31/git/" itemprop="url">
                   git <I></I>
                 </a>
@@ -347,10 +453,12 @@
 
       
         
-          
-            <h2 id="git-rm-&#x2013;-remove-the-file-or-directory-on-the-git-repo"><a href="#git-rm-&#x2013;-remove-the-file-or-directory-on-the-git-repo" class="headerlink" title="git rm  &#x2013; remove the file or directory on the git repo"></a>git rm  &#x2013; remove the file or directory on the git repo</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># -f, --force</span></div><div class="line"><span class="comment"># Override the up-to-date check.</span></div><div class="line"></div><div class="line"><span class="comment"># -n, --dry-run</span></div><div class="line"><span class="comment"># Don&apos;t actually remove any file(s). Instead, just show if they exist in the index and would otherwise be</span></div><div class="line"><span class="comment"># removed by the command.</span></div><div class="line"></div><div class="line"><span class="comment"># -r</span></div><div class="line"><span class="comment"># Allow recursive removal when a leading directory name is given.</span></div><div class="line"></div><div class="line">$ git rm -r -n --cache protected/components/Util.php</div><div class="line">$ git rm -r -n --cache protected/*</div><div class="line">$ git rm -r -n --cache protected</div></pre></td></tr></table></figure>
-
-          
+          <h2 id="git-rm-&#x2013;-remove-the-file-or-directory-on-the-git-repo"><a href="#git-rm-&#x2013;-remove-the-file-or-directory-on-the-git-repo" class="headerlink" title="git rm  &#x2013; remove the file or directory on the git repo"></a>git rm  &#x2013; remove the file or directory on the git repo</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># -f, --force</span></div><div class="line"><span class="comment"># Override the up-to-date check.</span></div><div class="line"></div><div class="line"><span class="comment"># -n, --dry-run</span></div><div class="line"><span class="comment"># Don&apos;t actually remove any file(s). Instead, just show if they exist in the index and would otherwise be</span></div><div class="line"><span class="comment"># removed by the command.</span></div><div class="line"></div><div class="line"><span class="comment"># -r</span></div><div class="line"><span class="comment"># Allow recursive removal when a leading directory name is given.</span></div><div class="line"></div><div class="line">$ git rm -r -n --cache protected/components/Util.php</div><div class="line">$ git rm -r -n --cache protected/*</div><div class="line">$ git rm -r -n --cache protected</div></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/10/31/git/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -662,7 +770,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -679,7 +787,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

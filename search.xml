@@ -4,9 +4,16 @@
   
     
     <entry>
+      <title><![CDATA[tcpdf - Display image in TCPDF using BLOB value]]></title>
+      <url>http://yoursite.com/2016/11/01/tcpdf/</url>
+      <content type="text"><![CDATA[The API documentation for Image() explains it in more detail: $file (string) Name of the file containing the image or a &#x2018;@&#x2019; character followed by the image data string. To link an image without embedding it on the document, set an asterisk character before the URL (i.e.: http://www.example.com/image.jpg). From example #9 - Image():12345// Example of Image from data stream (&apos;PHP rules&apos;)$imgdata = base64_decode(&apos;iVBORw0KGgoAAAANSUhEUgAAABwAAAASCAMAAAB/2U7WAAAABlBMVEUAAAD///+l2Z/dAAAASUlEQVR4XqWQUQoAIAxC2/0vXZDrEX4IJTRkb7lobNUStXsB0jIXIAMSsQnWlsV+wULF4Avk9fLq2r8a5HSE35Q3eO2XP1A1wQkZSgETvDtKdQAAAABJRU5ErkJggg==&apos;);// The &apos;@&apos; character is used to indicate that follows an image data stream and not an image file name$pdf-&gt;Image(&apos;@&apos;.$imgdata);]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[git]]></title>
       <url>http://yoursite.com/2016/10/31/git/</url>
-      <content type="text"><![CDATA[git rm &#x2013; remove the file or directory on the git repo12345678910111213# -f, --force# Override the up-to-date check.# -n, --dry-run# Don&apos;t actually remove any file(s). Instead, just show if they exist in the index and would otherwise be# removed by the command.# -r# Allow recursive removal when a leading directory name is given.$ git rm -r -n --cache protected/components/Util.php$ git rm -r -n --cache protected/*$ git rm -r -n --cache protected]]></content>
+      <content type="text"><![CDATA[git rm &#x2013; remove the file or directory on the git repo12345678910111213# -f, --force# Override the up-to-date check.# -n, --dry-run# Don&apos;t actually remove any file(s). Instead, just show if they exist in the index and would otherwise be# removed by the command.# -r# Allow recursive removal when a leading directory name is given.$ git rm -r -n --cache protected/components/Util.php$ git rm -r -n --cache protected/*$ git rm -r -n --cache protected git push &#x2013; push local branch to remote branch1# git push origin local_branch:remote_branch]]></content>
     </entry>
 
     
