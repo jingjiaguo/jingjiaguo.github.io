@@ -96,7 +96,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/10/31/git/index.html">
 <meta property="og:site_name" content="JingJia's Notes">
 <meta property="og:description" content="git rm  &amp;#x2013; remove the file or directory on the git repo12345678910111213# -f, --force# Override the up-to-date check.# -n, --dry-run# Don&amp;apos;t actually remove any file(s). Instead, just show i">
-<meta property="og:updated_time" content="2016-11-01T10:10:37.000Z">
+<meta property="og:updated_time" content="2016-11-02T07:15:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git <I></I>">
 <meta name="twitter:description" content="git rm  &amp;#x2013; remove the file or directory on the git repo12345678910111213# -f, --force# Override the up-to-date check.# -n, --dry-run# Don&amp;apos;t actually remove any file(s). Instead, just show i">
@@ -345,6 +345,23 @@
         <h2 id="git-rm-&#x2013;-remove-the-file-or-directory-on-the-git-repo"><a href="#git-rm-&#x2013;-remove-the-file-or-directory-on-the-git-repo" class="headerlink" title="git rm  &#x2013; remove the file or directory on the git repo"></a>git rm  &#x2013; remove the file or directory on the git repo</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># -f, --force</span></div><div class="line"><span class="comment"># Override the up-to-date check.</span></div><div class="line"></div><div class="line"><span class="comment"># -n, --dry-run</span></div><div class="line"><span class="comment"># Don&apos;t actually remove any file(s). Instead, just show if they exist in the index and would otherwise be</span></div><div class="line"><span class="comment"># removed by the command.</span></div><div class="line"></div><div class="line"><span class="comment"># -r</span></div><div class="line"><span class="comment"># Allow recursive removal when a leading directory name is given.</span></div><div class="line"></div><div class="line">$ git rm -r -n --cache protected/components/Util.php</div><div class="line">$ git rm -r -n --cache protected/*</div><div class="line">$ git rm -r -n --cache protected</div></pre></td></tr></table></figure>
 <a id="more"></a>
 <h2 id="git-push-&#x2013;-push-local-branch-to-remote-branch"><a href="#git-push-&#x2013;-push-local-branch-to-remote-branch" class="headerlink" title="git push &#x2013; push local branch to remote branch"></a>git push &#x2013; push local branch to remote branch</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># git push origin local_branch:remote_branch</span></div></pre></td></tr></table></figure>
+<h2 id="git-fetch"><a href="#git-fetch" class="headerlink" title="git fetch"></a>git fetch</h2><blockquote>
+<ul>
+<li><p>git fetch            &#x2192;&#x2192; &#x8FD9;&#x5C06;&#x66F4;&#x65B0;git remote &#x4E2D;&#x6240;&#x6709;&#x7684;&#x8FDC;&#x7A0B;repo &#x6240;&#x5305;&#x542B;&#x5206;&#x652F;&#x7684;&#x6700;&#x65B0;commit-id, &#x5C06;&#x5176;&#x8BB0;&#x5F55;&#x5230;.git/FETCH_HEAD&#x6587;&#x4EF6;&#x4E2D;</p>
+</li>
+<li><p>git fetch remote_repo         &#x2192;&#x2192; &#x8FD9;&#x5C06;&#x66F4;&#x65B0;&#x540D;&#x79F0;&#x4E3A;remote_repo &#x7684;&#x8FDC;&#x7A0B;repo&#x4E0A;&#x7684;&#x6240;&#x6709;branch&#x7684;&#x6700;&#x65B0;commit-id&#xFF0C;&#x5C06;&#x5176;&#x8BB0;&#x5F55;&#x3002; </p>
+</li>
+<li><p>git fetch remote_repo remote_branch_name        &#x2192;&#x2192; &#x8FD9;&#x5C06;&#x8FD9;&#x5C06;&#x66F4;&#x65B0;&#x540D;&#x79F0;&#x4E3A;remote_repo &#x7684;&#x8FDC;&#x7A0B;repo&#x4E0A;&#x7684;&#x5206;&#x652F;&#xFF1A; remote_branch_name</p>
+</li>
+<li><p>git fetch remote_repo remote_branch_name:local_branch_name       &#x2192;&#x2192; &#x8FD9;&#x5C06;&#x8FD9;&#x5C06;&#x66F4;&#x65B0;&#x540D;&#x79F0;&#x4E3A;remote_repo &#x7684;&#x8FDC;&#x7A0B;repo&#x4E0A;&#x7684;&#x5206;&#x652F;&#xFF1A; remote_branch_name &#xFF0C;&#x5E76;&#x5728;&#x672C;&#x5730;&#x521B;&#x5EFA;local_branch_name &#x672C;&#x5730;&#x5206;&#x652F;&#x4FDD;&#x5B58;&#x8FDC;&#x7AEF;&#x5206;&#x652F;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x3002;</p>
+</li>
+</ul>
+<ul>
+<li>FETCH_HEAD&#xFF1A; &#x662F;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x94FE;&#x63A5;&#xFF0C;&#x8BB0;&#x5F55;&#x5728;&#x672C;&#x5730;&#x7684;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6307;&#x5411;&#x7740;&#x76EE;&#x524D;&#x5DF2;&#x7ECF;&#x4ECE;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x53D6;&#x4E0B;&#x6765;&#x7684;&#x5206;&#x652F;&#x7684;&#x672B;&#x7AEF;&#x7248;&#x672C;</li>
+</ul>
+</blockquote>
+<h2 id="&#x53C2;&#x8003;&#xFF1A;"><a href="#&#x53C2;&#x8003;&#xFF1A;" class="headerlink" title="&#x53C2;&#x8003;&#xFF1A;"></a>&#x53C2;&#x8003;&#xFF1A;</h2><p><a href="http://www.xuebuyuan.com/2071482.html" target="_blank" rel="external">http://www.xuebuyuan.com/2071482.html</a></p>
+
       
     </div>
 
@@ -476,7 +493,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -484,7 +501,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -493,7 +510,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -522,7 +539,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-rm-–-remove-the-file-or-directory-on-the-git-repo"><span class="nav-number">1.</span> <span class="nav-text">git rm  – remove the file or directory on the git repo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-push-–-push-local-branch-to-remote-branch"><span class="nav-number">2.</span> <span class="nav-text">git push – push local branch to remote branch</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-rm-–-remove-the-file-or-directory-on-the-git-repo"><span class="nav-number">1.</span> <span class="nav-text">git rm  – remove the file or directory on the git repo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-push-–-push-local-branch-to-remote-branch"><span class="nav-number">2.</span> <span class="nav-text">git push – push local branch to remote branch</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-fetch"><span class="nav-number">3.</span> <span class="nav-text">git fetch</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考："><span class="nav-number">4.</span> <span class="nav-text">参考：</span></a></li></ol></div>
             
           </div>
         </section>
